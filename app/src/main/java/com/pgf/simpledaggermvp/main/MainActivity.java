@@ -17,6 +17,7 @@ import javax.inject.Inject;
 * 5: appApplication has instance of appComponent, initializes it in onCreate, which
 *    instantiates appModule, which has a reference to appApplication
 * 6: appComponent lists modules (appModule)
+* 7: add base classes for activity, component, module, presenter and view
 *
 */
 public class MainActivity extends BaseActivity {
