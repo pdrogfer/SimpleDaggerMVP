@@ -1,15 +1,17 @@
 package com.pgf.simpledaggermvp.main;
 
-public class MainActivityPresenter {
+import com.pgf.simpledaggermvp.mvp_base.BaseActivityPresenter;
 
-    MainActivityView view;
+public class MainActivityPresenter extends BaseActivityPresenter<MainActivityView> {
 
     public MainActivityPresenter(MainActivityView view) {
-        this.view = view;
+        super(view);
     }
 
+    @Override
     public void onCreate() {
-
         view.initView();
     }
+
+
 }
